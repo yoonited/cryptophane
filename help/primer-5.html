@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>A Cryptography Primer</h1>
+		<h2>The Web of Trust</h2>
+		
+<p>
+As discussed in <a href="primer-4.html">chapter 4</a>, we have to check the fingerprint of new keys when we add them to our keyrings.  If we don't check, we may be using a key that doesn't really belong to who we think it does.
+</p><p>
+Understandably, this can get very tedious if you have to check every single key you add.  To lessen this hassle, Cryptophane allows you to trust other people's signatures.
+</p><p>
+An example:
+</p>
+<ol>
+	<li>Alice has Carol's key on her keyring, and she has checked the fingerprint and signed it.</li>
+	<li>Bob trusts Alice's signatures.</li>
+	<li>Bob wants to send a private message to Carol.</li>
+	<li>Bob gets Carol's public key.  Since it is signed by Alice, and Bob trusts Alice, Bob does not need to check Carol's key before he uses it.</li>
+</ol>
+
+<h2>Using Cryptophane</h2>
+<ul class="spaced">
+	<li>Learn how to <a href="trust.html">set the trust level</a> of keys on your keyring.</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>
+Congratulations!  You should have a rough understanding of the basics of asymetric cryptography.
+</p><p>
+The best way to really understand what's going on is to have a bit of hands-on experience, however.  It's time to <a href="getting_started.html">get started</a>. You miht like to het hold of a friend, make up some test keys, and try it out.  Refer back to this primer once you've had a chance to give it a go but for now, <a href="getting_started.html">"Let's get started!"</a>
+</p>
+	</body>
+</html>

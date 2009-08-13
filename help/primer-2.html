@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>A Cryptography Primer</h1>
+		
+<h2>Encrypting and decrypting a message</h2>
+
+<p>Let's say Alice wants to send a private message to Bob.</p>
+
+<ol class="spaced">
+	<li>Bob uses Cryptophane (or any OpenPGP application) to create an asymetric "key pair".  Half of the key is called the "public key" and the other half the "secret key".</li>
+	<li>Bob keeps the <i>secret key</i> half to himself, and sends the <i>public key</i> to Alice unencrypted, or puts it on a web site so that Alice (or anyone else) can download it.</li>
+	<li>Alice receives Bob's <i>public key</i> and adds it to her Cryptophane <i>keyring</i>.</li>
+	<li>Alice checks the public key came from Bob: since anyone can upload a public key, she'll have to check that it's really his [<a href="primer-4.html">primer chapter 4</a>]</li>
+	<li>Alice encrypts the message using Bob's <i>public key</i>, and then sends him the message.</li>
+	<li>Bob receives the message and uses his <i>secret key</i> to decrypt it.</li>
+</ol>
+<p>
+From now on, Alice can use Bob's public key to send as many private messages to him as she wants.  Due to the mathematical properties of asymetric algorithms, only people who posses Bob's secret key can decrypt messages encrypted with his public key.
+</p><p>
+What would happen if Eve, a person with questionable morality, should try to intrude upon Alice and Bob's private conversation?  Eve may have acquired access to Bob's mailbox and be able to read the encrypted messages.  She can also download Bob's public key off the Internet.  But because she doesn't have Bob's secret key (which only exists on Bob's computer), she is not able to decrypt the encrypted messages.
+</p>
+
+<h2>Using Cryptophane</h2>
+<ul class="spaced">
+	<li>Find out how to <a href="generate.html">create a key pair</a> using Cryptophane so that people can send encrypted messages to you.</li>
+	<li>Learn how to <a href="send.html">upload your public key to a keyserver</a> so anyone can get your public key.</li>
+	<li>Read about how to <a href="encrypt.html">encrypt</a> or <a href="decrypt.html">decrypt</a> messages.</li>
+</ul>
+
+<h2>Next Chapters</h2>
+<ul class="spaced">
+	<li>In chapter 3 learn about <a href="primer-3.html">checking the authenticity of a message</a>: who was the message really sent from?</li>
+	<li>In chapter 4 you can find out about how to <a href="primer-4.html">check that a public key belongs to the right person</a>: remember anyone can make and send you a fake public key.</li>
+</ul>
+
+	</body>
+</html>

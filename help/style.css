@@ -1,0 +1,10 @@
+body { font-family: arial, sans-serif; font-size: 10pt; }
+
+dl { margin-left: 16px }
+dt { margin-top: 12px; font-weight: bold }
+
+.spaced li { margin-bottom: 10px; }
+
+.menu_item { font-weight: bold; }
+
+.important { background-color: #eee; border: 1px solid #bbb; padding: 5px; margin: 0px 0px 0px 20px; }

@@ -1,0 +1,83 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>Cryptophane functions</h1>
+
+<a href="#menu">Menu item functions</a> | <a href="#interface">Interface functions</a>
+
+<a name="menu"></a><h2>Menu item functions</h2>
+<p>
+The following describes the functionality of each menu item available in the Cryptophane application. The top-level item indicates the main menu option and each list item is a submenu option.
+</p>
+<h3>File</h3>
+<ul>
+<li><span class="menu_item">Encrypt:</span> opens a file browser to select a file to encrypt. Once a file is selected the <a href="encrypt.html">Encryption</a> window is displayed</li>
+<li><span class="menu_item">Sign:</span> opens a file browser to select a file to sign. Once a file is selected the <a href="encrypt.html">Encryption</a> window is displayed</li>
+<li><span class="menu_item">Encrypt and Sign:</span> opens a file browser to select a file to encrypt and sign. Once a file is selected the <a href="encrypt.html">Encryption</a> window is displayed</li>
+<li><span class="menu_item">Decrypt:</span> opens a file browser to select an encrypted file to decrypt. Once selected you will be promted to enter your passphrase</li>
+<li><span class="menu_item">Verify Signature:</span> opens a file browser to select a file to verify the signature of</li>
+<li><span class="menu_item">Message:</span> opens a new window which allows you to enter or paste text that will be encrypted. Once a file is selected the <a href="encrypt.html">Encryption</a> window is displayed. The resulting encrypted text will be presented in a window and also added to the clipboard for easy pasting</li>
+<li><span class="menu_item">Import Keys:</span> opens a file browser to select a key to import</li>
+<li><span class="menu_item">Export Public keys:</span> opens a window with a list of all the Public keys on your keyring. You can select one or more keys and export them to either a file or to the screen and clipboard</li>
+<li><span class="menu_item">Export Secret keys:</span> opens a window with a list of all your Secret keys on your keyring. You are warned before being able to select one or more keys and export them to either a file or to the screen and clipboard</li>
+<li><span class="menu_item">Exit:</span> closes Cryptophane</li>
+</ul>
+
+<h3>View</h3>
+<ul>
+<li><span class="menu_item">Folders:</span> toggle the display of the Folders pane on the main screen</li>
+<li><span class="menu_item">Expired keys:</span> toggle the display of expired keys on the main screen</li>
+<li><span class="menu_item">Hints:</span> toggle the display of the Hints pane on the main screen</li>
+<li><span class="menu_item">Public Keys / Secret Keys:</span> toggle between displaying the public keys and your secret keys in the keys grid of the main screen. If the Secret keys option is selected, the folders pane is also hidden (secret keys cannot be assigned to folders)</li>
+<li><span class="menu_item">Icons / Details:</span> toggle between displaying a simple 'icon' view  or a more verbose 'detail' view for each key in the keys grid of the main screen</li>
+</ul>
+
+<h3>Keys</h3>
+<ul>
+<li><span class="menu_item">Properties of Selected Key...:</span> displays the <a href="key_properties.html">Properties</a> window for the selected key</li>
+<li><span class="menu_item">Sign Selected Key...:</span> Opens the <a href="sign_key.html">Sign Key</a> window for the selected key</li>
+<li><span class="menu_item">Edit Trust of Selected Key...:</span> Opens the <a href="edit_trust.html">Edit Level of Trust</a> window for the selected key</li>
+<li><span class="menu_item">Delete Selected Key:</span> Opens a prompt window confirming whether you really want to delete the selected key. Selecting 'Yes' from this window will delete the key from your keyring. Selecting 'No' will close the prompt window and the selected key will not be deleted</li>
+<li><span class="menu_item">Search Keyserver:</span> Opens the <a href="search_keyserver.html">Search Keyserver</a> window to allow you to find and add new public keys to your keyring</li>
+<li><span class="menu_item">Get Key from Keyserver:</span> Opens the <a href="get_key.html">Get Key from Keyserver</a> window. This is faster than a search if you already know the key ID you want to get</li>
+<li><span class="menu_item">Refresh from Keyserver:</span> Updates all the keys from the Keyserver</li>
+<li><span class="menu_item">Send to Keyserver:</span> Sends the selected key to the keyserver. Use this function on a key you have just signed</li>
+<li><span class="menu_item">Generate secret key:</span> Opens the <a href="generate_key.html">Generate Secret Key</a> window. Use this function to create a new secret key. You generally won't need to use this again until your key expires</li>
+<li><span class="menu_item">Refresh:</span> Updates the main screen view</li>
+</ul>
+
+<h3>Tools</h3>
+<ul>
+<li><span class="menu_item">Options:</span> Opens the <a href="options.html">Crytophane Options</a> window which allows you to configure program options and defaults</li>
+</ul>
+
+<h3>Help</h3>
+<ul>
+<li><span class="menu_item">Contents:</span> Open this help file in the Contents view</li>
+<li><span class="menu_item">Index:</span> Open this help file in the Index view</li>
+<li><span class="menu_item">Cryptophane Web Site...:</span> Opens the Crytophane web site in your default web browser</li>
+<li><span class="menu_item">About...:</span> Opens the 'About Cryptophane' window which displays version, copyright and legal information about Cryptophane</li>
+</ul>
+
+<hr width="95%">
+<a name="interface"></a><h2>Interface functions</h2>
+<h3>Right mouse-click on a key</h3>
+<ul>
+<li><span class="menu_item">Key Properties:</span> displays the <a href="key_properties.html">Properties</a> window for the selected key.</li>
+<li><span class="menu_item">Encrypt to...:</span> opens a file browser to select a file to encrypt. Once a file is selected the <a href="encrypt.html">Encryption</a> window is displayed with the selected key selected for encryption</li>
+<li><span class="menu_item">Sign key...:</span> Opens the <a href="sign_key.html">Sign Key</a> window for the selected key</li>
+<li><span class="menu_item">Edit Trust...:</span> Opens the <a href="edit_trust.html">Edit Level of Trust</a> window for the selected key</li>
+<li><span class="menu_item">Delete Key:</span> Opens a prompt window confirming whether you really want to delete the selected key. Selecting 'Yes' from this window will delete the key from your keyring. Selecting 'No' will close the prompt window and the selected key will not be deleted</li>
+<li><span class="menu_item">Send to Keyserver...:</span> Sends the selected key to the keyserver. Use this function on a key you have just signed</li>
+<li><span class="menu_item">Refresh from default Keyserver...:</span> Updates the selected key from the default Keyserver</li>
+</ul>
+
+<h3>Enter text into the 'Filter' input field</h3>
+<p>
+Entering text in the filter input field will perform a real-time filtering of keys in the key grid. Keys the do not match the filter input will not be displayed in the key grid. Clearing the text from the filter input field will display all the keys in the key grid.
+</p>
+</body>
+</html>

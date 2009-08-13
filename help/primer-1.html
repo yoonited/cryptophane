@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>A Cryptography Primer</h1>
+		<h2>What is asymetric cryptography?</h2>
+<p>
+You have a problem: you want to send a secret message to your friend.
+</p><p>
+You could encode your message using an algorithm, for example, move each
+letter one along the alphabet, so "Secret message" becomes "Tfdsfu nfttbhf".  But it's just as likely that someone who intercepts your message will be able to guess what's going on.
+</p><p>
+You could encode your message using a secret password, so only someone who knew the password could retrieve the original message.  But how will you get the password to your friend so that they can decode it, without the password being intercepted by someone with malicious intent?
+</p><p>
+Asymetric cryptography solves this problem.  Instead of trying to transmit a secret password to your friend, your friend sends you a key that allows you to encrypt messages to him/her.  This key is called the "public key" because it doesn't matter who has it -- a lot of public keys are put on public key servers so that anyone can download them.  Your friend then decrypts the message with their "secret key".  
+</p><p>
+Because only your friend has their secret key, only they can read messages encrypted with their public key that you (or anyone else) sends to them.
+</p><p>
+This process is called asymetric because a different key is used to encrypt the message (the public key) than is used to decrypt the message (the secret key.)  The "old" process of sending a secret password is called symetric because the same key is used to encrypt and decrypt the message.
+</p>
+
+<h2>Next Chapter</h2>
+<p>Confused?  Maybe an example will help!</p>
+<ul class="spaced">
+	<li>In chapter 2 learn about <a href="primer-2.html">how to use cryptography to send a private message</a>.</li>
+</ul>
+
+	</body>
+</html>

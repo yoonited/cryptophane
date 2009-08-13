@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>A Cryptography Primer</h1>
+		<h2>Checking a key belongs to the right person</h2>
+<p>
+Consider this scenario: Bob is about to upload his public key to the Internet so that Alice can download it and send him a private message.  Mallory hears that Bob has told Alice he's going to do this, so Mallory kills Bob's Internet connection, creates a key in Bob's name, and uploads it to the Internet.
+</p><p>
+Now when Alice goes to find Bob's key, she'll in fact get Mallory's fake key.  If she encrypts a message using that key, Mallory will be able to read it.
+</p><p>
+Alternatively, Mallory may not stop Bob from uploading his key but also upload one herself.  When Alice goes to get Bob's key, she'll find two keys both claiming they're Bob's.  She wouldn't know which one to choose.
+</p><p>
+How do we make sure this doesn't happen?  
+</p>
+<h2>Checking the fingerprint</h2>
+<p>
+Each key has a "fingerprint".  This is a 32 character string that is unique
+to the key.  Alice will download Bob's key and then ring Bob up on the phone or go and meet him to compare fingerprints.  If the fingerprint on Alice's computer matches Bob's fingerprint of his own key, the keys are the same.  If the fingerprints don't match, someone malicious has tried to deceive Alice into using the wrong key and she should discard it.
+</p>
+<h2>Signing a key</h2>
+<p>
+In the previous chapter, we looked at how we could sign messages to indicate their authenticity.  In a similar way, we can sign other people's public keys to 
+show that we are sure that this key belongs to them.
+</p><p>
+To make sure you don't use someone's key when you haven't yet checked their
+key's fingerprint, Cryptophane requires that you sign their key before letting
+you encrypt anything to them.  This is the process that Alice and Bob will
+go through:
+</p>
+<ol>
+	<li>Bob uploads his key to the Internet, or sends his key directly to Alice.</li>
+	<li>Alice gets the key and imports it into her keyring.</li>
+	<li>Alice rings Bob and checks the fingerprints match.</li>
+	<li>Since they do, Alice signs Bob's public key to indicate that she is sure that the key really belongs to Bob.</li>
+</ol>
+
+<h2>Do I have to sign EVERY new key I get?</h2>
+<p>
+Not necessary.  Take a look at <a href="primer-5.html">chapter 5</a> where we discuss the web of trust.  If someone else that you trust has signed a key, you won't have to sign it.  Because you trust them, and they've asserted the key is legitimate, you trust their assertion.
+</p>
+
+<h2>Using Cryptophane</h2>
+<ul class="spaced">
+	<li>Learn how to <a href="check-fingerprint.html">check the fingerprint</a> of a key on your keyring.</li>
+	<li>Find out how to <a href="key-sign.html">sign a key</a> on your keyring so that you can use it.</li>
+</ul>
+
+<h2>Next Chapter</h2>
+<ul class="spaced">
+	<li>In chapter 5 learn about <a href="primer-5.html">the web of trust</a>.</li>
+</ul>
+
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>Creating a Key Pair</h1>
+<p>
+The first thing you need to do is create a key pair. You'll remember from the <a href="primer-2.html">primer</a>
+that we need to make two keys: a public key and a secret key. In Cryptophane, it's very simple to generate a key pair.
+</p><p>
+From the Keys menu, select the 'Generate Secret Key...' option. You'll be presented with the 'Generate Secret Key'
+screen, which requires you to complete the following information.
+</p><p>
+<span class="menu_item">Name:</span> Enter your full name. This will help people find your public key by allowing them to search using your name.
+</p><p>
+<span class="menu_item">E-mail address:</span> Enter your e-mail address. This is another way to help people find your public key. If you have more than one e-mail address, use the address you're likely to be using to send any encrypted data. A permanent, server-based address (rather than a webmail service) is a better option if you have the choice.
+</p><p>
+<span class="menu_item">Comment:</span> Enter any text that you'd like anyone searching for your key to be able to read. For example, you might want to make it clear who you are by putting your occupation in the comment field or by putting in some other identifiable information.
+</p><p>
+<span class="menu_item">Key expires:</span> Selecting the 'expiry' checkbox will make your key expire in one year from the date of creation. Although optional, it's a good idea to set an expiry on your key. In the unlikely event that a someone else gets hold of your secret key and passphrase (for example by getting access to your computer, stealing your secret key file and installing a keyboard sniffer), then by setting a expiry date you're limiting the amount of time they can potentially exploit this information. Having an expiry does mean that you have to reissue a key every year so you should weigh up whether the annoyance of doing that every year is worth the alternative. If you're paticularly security conscious we suggest checking this option.
+</p>
+<div class="important"><span class="menu_item">Setting a passphrase</span>
+<p>
+Because this is the most important step of creating your new key, we've given it its own heading.
+</p><p>
+Your passphrase is your way of verifying that you really are who you say you are. A malicious third-party who gets hold of your secret key AND your passphrase can, cryptographically, pretend to be you. They can also decrypt any information or communication that you've encrypted. Think of your passphrase like your bank PIN number or the password to your most secret information. It's worth taking the time to come up with a passphrase that is:
+<ol>
+<li>easy for you to remember AND;</li>
+<li>impossible for anyone else to guess</li>
+</ol>
+It should be easy to remember as you'll need to type it in to cryptophane every time you sign a key and encrypt or decrypt anything. Capitalisation matters so a passphrase with some upper- and lower-case letters is recommended. Using numbers and other non-alphabetic characters (such as "@!% etc...) dramatically increases the possible combinations.  Best of all, make it long: an example of a good passphrase is short sentence containing some words not found in a dictionary.
+</p>
+</div>
+<p>
+Now you've created your key pair, learn how to <a href="send.html">send your public key to a keyserver</a>, or how
+to <a href="encrypt.html">encrypt</a> or <a href="decrypt.html">decrypt</a> messages.
+</p>
+</body>
+</html>

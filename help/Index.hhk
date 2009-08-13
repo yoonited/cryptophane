@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="command-line options">
+		<param name="Name" value="Untitled: c:\Source\cryptophane\help\command-line.html">
+		<param name="Local" value="command-line.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="creating a new key pair">
+		<param name="Name" value="Untitled: c:\Source\cryptophane\help\generate.html">
+		<param name="Local" value="generate.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="cryptography primer">
+		<param name="Name" value="Untitled: c:\Source\cryptophane\help\primer.html">
+		<param name="Local" value="primer.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="decrypt a message">
+		<param name="Name" value="Untitled: c:\Source\cryptophane\help\decrypt.html">
+		<param name="Local" value="decrypt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="edit your trust of a key">
+		<param name="Name" value="Untitled: c:\Source\cryptophane\help\trust.html">
+		<param name="Local" value="trust.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="encrypt a message">
+		<param name="Name" value="Untitled: c:\Source\cryptophane\help\encrypt.html">
+		<param name="Local" value="encrypt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="generating a new key pair">
+		<param name="Name" value="Untitled: c:\Source\cryptophane\help\generate.html">
+		<param name="Local" value="generate.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="sending a key to a keyserver">
+		<param name="Name" value="Untitled: c:\Source\cryptophane\help\send.html">
+		<param name="Local" value="send.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="sign a key">
+		<param name="Name" value="Untitled: c:\Source\cryptophane\help\key-sign.html">
+		<param name="Local" value="key-sign.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="sign a message">
+		<param name="Name" value="Untitled: c:\Source\cryptophane\help\sign.html">
+		<param name="Local" value="sign.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="trust networks">
+		<param name="Name" value="Untitled: c:\Source\cryptophane\help\trust.html">
+		<param name="Local" value="trust.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="validate a signed message">
+		<param name="Name" value="Untitled: c:\Source\cryptophane\help\validate.html">
+		<param name="Local" value="validate.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="web of trust">
+		<param name="Name" value="Untitled: c:\Source\cryptophane\help\trust.html">
+		<param name="Local" value="trust.html">
+		</OBJECT>
+</UL>
+</BODY></HTML>
