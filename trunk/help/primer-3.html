@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>A Cryptography Primer</h1>
+		<h2>Signing and verifying messages</h2>
+<p>
+We're back with our friends Alice and Bob.  This time, Alice wants to
+send Bob a message and digitally sign it, so that Bob can be assured that
+the message came from Alice and was not tampered in transit.
+</p>
+<ol class="spaced">
+	<li>Alice generates a key pair, sends her public key to Bob, and Bob adds it to his keyring (as described in <a href="primer-2.html">primer chapter 2</a>)</li>
+	<li>Alice signs the message with her <i>secret key</i> and sends it to Bob.</li>
+	<li>Bob receives the message, and validates that the message was really sent by Alice by checking the message's signature using Alice's <i>public key</i>.  If it matches, the message came from Alice and wasn't tampered with.</li>
+</ol>
+
+<p>
+Mallory, who is up to no good, wants to manipulate Alice's message to Bob so it says something different.  She goes into Bob's mailbox and changes the contents of the message.  But when Bob goes to validate the signature on the message, he finds that the signature does not match the contents of the message and knows that it has been altered.  Mallory can't make a new signature for the altered message, because she doesn't have Alice's secret key.
+
+</p>
+
+<h2>Encryption and signing together</h2>
+<p>
+Alice can send a message to Bob that is both encrypted and signed.  She encrypts it using Bob's public key, then signs it using her private key.  This way, no-one can intercept and read the private message, and no-one can tamper with the message so Bob can be assured of its authenticity.
+</p>
+
+<h2>Secure file distribution</h2>
+<p>
+Another use of cryptographic signing is to distribute software.  A software manufacturer can sign an application installer with their secret key.  When a user downloads the software, they can check that the signature of the application installer matches the installer they download.  If they match, the user is assured that the installer has not been tampered with: no viruses or spyware have been added.  If the signature does not match, the installer has been tampered with and the user should not install the software!
+</p>
+
+<h2>Using Cryptophane</h2>
+<ul class="spaced">
+	<li>Learn how to <a href="sign.html">sign</a> and <a href="validate.html">validate signatures</a> on messages you send and receive.
+</ul>
+
+<h2>Next Chapter</h2>
+<ul class="spaced">
+	<li>In chapter 4 you can find out about how to <a href="primer-4.html">check that a public key belongs to the right person</a>: remember anyone can make and send you a fake public key.</li>
+</ul>
+
+	</body>
+</html>

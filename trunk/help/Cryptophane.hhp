@@ -1,0 +1,35 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=Cryptophane.chm
+Contents file=Table of Contents.hhc
+Default topic=index.html
+Display compile progress=No
+Index file=Index.hhk
+Language=0x1409 English (New Zealand)
+Title=Cryptophane Help
+
+
+[FILES]
+about.html
+what.html
+index.html
+primer.html
+primer-1.html
+primer-2.html
+primer-4.html
+primer-3.html
+primer-5.html
+todo.html
+getting_started.html
+generate.html
+send.html
+validate.html
+check-fingerprint.html
+decrypt.html
+encrypt.html
+key-sign.html
+sign.html
+trust.html
+
+[INFOTYPES]
+
